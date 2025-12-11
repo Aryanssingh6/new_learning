@@ -1,14 +1,27 @@
-package conditionals;
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode();
+        ListNode res = dummy;
+        int total = 0, carry = 0;
 
-public class basicscodearray {
-    public static void main(String[] args) {
-        int arr[] = new int[5];
-        arr[0] = 10;
-        arr[1] = 20;
-        arr[2] = 30;
-        arr[3] = 40;
-        arr[4] = 90;
-    
-    System.out.println(arr[4]);
-}
+        while (l1 != null || l2 != null || carry != 0) {
+            total = carry;
+
+            if (l1 != null) {
+                total += l1.val;
+                l1 = l1.next;
+            }
+            if (l2 != null) {
+                total += l2.val;
+                l2 = l2.next;
+            }
+
+            int num = total % 10;
+            carry = total / 10;
+            dummy.next = new ListNode(num);
+            dummy = dummy.next;
+        }
+
+        return res.next;        
+    }
 }

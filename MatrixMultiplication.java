@@ -3,7 +3,7 @@
 public class MatrixMultiplication {
     public static void main(String[] args) {
         int[][] a = {{1, 2, 3}, {4, 5, 6}};
-        int[][] b = {{7, 8}, {9, 10}, {11, 12}};
+        int[][] b = {{7, 8}, {8, 10}, {11, 12}};
         if(a[0].length != b.length) {
             System.out.println("multiplicationNotPossible");
 
