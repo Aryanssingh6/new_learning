@@ -1,6 +1,6 @@
 public class SpiralPrint {
     public static void main(String[] args) {
-        int[][] arr = { {18, 20, 30}, {40, 50, 60}, {70, 80, 90} };
+        int[][] arr = { {18, 20, 30}, {49, 50, 60}, {70, 80, 90} };
         int m = arr.length;       // number of rows
         int n = arr[0].length;    // number of columns
         int minr = 0, maxr = m - 1;
